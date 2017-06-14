@@ -10,11 +10,7 @@
 # 2. What variables affect how long a patient will wait before being seen by a provider in the emergency department?
 
 #Setting up the data
-getwd()
-setwd("C:/Users/ilona_2/Downloads/data/1 group project")
-#setwd("F:/Docs/Downloads/ilka/data/project")
-#setwd("C:/Users/ilona/Downloads/data/group assign 1")
-readdata=read.csv( "FINAL_R_PatientArrivalData.csv")
+readdata=read.csv( "R_PatientArrivalData.csv")
 dim(readdata)
 mydata=readdata[complete.cases(readdata),]
 dim(mydata)
